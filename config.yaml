@@ -1,0 +1,23 @@
+# Keep/shard preferences.
+classes: [warlock, hunter, titan]
+
+armor:
+  # Preferred archetypes, best first. At archetype_override_min_tier or higher
+  # they beat every other archetype in set coverage, whatever the tier.
+  archetype_order: [Powerhouse, Colossus, Gunner]
+  archetype_override_min_tier: 3
+  # Breaks ties on primary, then secondary, tertiary, and tuned stat.
+  stat_priority: [Weapons, Super, Health, Grenade, Class, Melee]
+  # Per-exotic overrides, keyed by exotic name. For example:
+  #   "Celestial Nighthawk":
+  #     archetype_order: [Colossus, Paragon]    # different preference
+  #   "Ophidian Aspect":
+  #     keep_per_archetype: [Powerhouse, Gunner]  # keep the best of each
+  exotic_overrides: {}
+  # Armor perks kept like a set: for each class and slot, the best piece with
+  # the perk is kept.
+  perk_sets: ["Iron Lord's Pride"]
+
+weapons:
+  voltron_modes: [pve]
+  never_keep: []

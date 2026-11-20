@@ -1,0 +1,355 @@
+# Your own weapon rolls. Each roll keeps the best copy of that weapon that can
+# roll it; weapons without a roll here keep their best copy by Voltron.
+# Weapon names ignore Adept, Timelost, Harrowed, and Baroque; perk names are the
+# in-game names (enhanced perks count as the base perk).
+#
+# A roll lists its perks one column to a line, named the way the game names the
+# column: perk_1 and perk_2 (the traits), origin_trait, barrel, magazine, and
+# masterwork (or launcher_barrel, scope, battery, blade, guard, bowstring,
+# arrow, or haft on weapons that have those). Write choices for one column as
+# [Chaos Reshaped, Firefly]: a copy with either one matches, and the roll still
+# keeps a single copy.
+#
+# Traits are primary: a copy matches when it can have every listed trait at
+# once. Everything else is secondary: optional, and of the copies that match,
+# the one with the most of it is kept, then the one with the masterwork stat.
+# A roll can say it is for pve or pvp (mode), and the plan names it that way.
+# Rolls saved by the tie step also note when they were added and the game
+# version (Bungie's manifest version) at the time, since perk pools and the
+# meta change. Everything but perks is optional.
+#
+# Fatebringer:
+#   - label: add clear
+#     perks:
+#       - perk_1: Explosive Payload
+#       - perk_2: Firefly
+#   - mode: pvp
+#     perks:
+#       - perk_1: [Explosive Payload, Opening Shot]
+#       - perk_2: Kill Clip
+#       - masterwork: Range
+
+Liturgy:
+  - label: Rimestealer + Chill Clip or Chain Reaction
+    perks:
+      - perk_1: Rimestealer
+      - perk_2: [Chill Clip, Chain Reaction]
+    added: 2026-10-01
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Blast Furnace:
+  - mode: pve
+    perks:
+      - perk_1: Kinetic Tremors
+      - perk_2: [Chaos Reshaped, Firefly]
+      - origin_trait: Forge's Kin
+      - barrel: Fluted Barrel
+      - magazine: Flared Magwell
+      - masterwork: Handling
+    added: 2026-10-01
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: [Headseeker, Zen Moment]
+      - perk_2: [Desperado, Kill Clip]
+      - origin_trait: Forge's Kin
+      - barrel: Arrowhead Brake
+      - magazine: Ricochet Rounds
+      - masterwork: Range
+    added: 2026-10-01
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Kinetic Tremors + One for All
+    perks:
+      - perk_1: Kinetic Tremors
+      - perk_2: One for All
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Edge Transit:
+  - label: Cascade Point + Explosive Light
+    perks:
+      - perk_1: Cascade Point
+      - perk_2: Explosive Light
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Repulsor Brace + Destabilizing Rounds
+    perks:
+      - perk_1: Repulsor Brace
+      - perk_2: Destabilizing Rounds
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Auto-Loading Holster + Bait and Switch
+    perks:
+      - perk_1: Auto-Loading Holster
+      - perk_2: Bait and Switch
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Midnight Coup:
+  - label: Firefly or Explosive Payload + Frenzy or One for All
+    perks:
+      - perk_1: [Firefly, Explosive Payload]
+      - perk_2: [Frenzy, One for All]
+      - barrel: Fluted Barrel
+      - magazine: Appended Mag
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Mirror Imago:
+  - mode: pvp
+    perks:
+      - perk_1: Moving Target
+      - perk_2: [Sword Logic, Target Lock]
+      - origin_trait: Willing Vessel
+      - barrel: Smallbore
+      - magazine: Accurized Rounds
+      - masterwork: Range
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Exalted Truth:
+  - mode: pve
+    perks:
+      - perk_1: Destabilizing Rounds
+      - perk_2: [One for All, Repulsor Brace]
+      - origin_trait: [Alacrity, One Quiet Moment]
+      - barrel: Fluted Barrel
+      - magazine: Tactical Mag
+      - masterwork: [Handling, Reload Speed]
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: [Slideshot, Keep Away, Lone Wolf]
+      - perk_2: [Precision Instrument, Opening Shot, Eye of the Storm]
+      - origin_trait: [One Quiet Moment, Alacrity]
+      - barrel: Smallbore
+      - magazine: Accurized Rounds
+      - masterwork: Range
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Forbearance:
+  - label: Demolitionist or Ambitious Assassin + Chain Reaction or One for All
+    perks:
+      - perk_1: [Demolitionist, Ambitious Assassin]
+      - perk_2: [Chain Reaction, One for All]
+      - launcher_barrel: Quick Launch
+      - magazine: High-Velocity Rounds
+      - masterwork: [Reload Speed, Handling]
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Luna's Howl:
+  - label: Heal Clip + Incandescent
+    perks:
+      - perk_1: Heal Clip
+      - perk_2: Incandescent
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Subsistence + Magnificent Howl
+    perks:
+      - perk_1: Subsistence
+      - perk_2: Magnificent Howl
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Hammerhead:
+  - label: Destabilizing Rounds or Demolitionist + Mega Kill Clip or Onslaught
+    perks:
+      - perk_1: [Destabilizing Rounds, Demolitionist]
+      - perk_2: [Mega Kill Clip, Onslaught]
+      - origin_trait: Forge's Kin
+      - barrel: Fluted Barrel
+      - magazine: Appended Mag
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Rewind Rounds + Mega Kill Clip, Killing Tally, or Target Lock
+    perks:
+      - perk_1: Rewind Rounds
+      - perk_2: [Mega Kill Clip, Killing Tally, Target Lock]
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Fourth Time's the Charm + Target Lock
+    perks:
+      - perk_1: Fourth Time's the Charm
+      - perk_2: Target Lock
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Demolitionist + Desperate Measures
+    perks:
+      - perk_1: Demolitionist
+      - perk_2: Desperate Measures
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Destabilizing Rounds + Demoralize
+    perks:
+      - perk_1: Destabilizing Rounds
+      - perk_2: Demoralize
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Rampage + Onslaught
+    perks:
+      - perk_1: Rampage
+      - perk_2: Onslaught
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: Rampage
+      - perk_2: Desperate Measures
+      - origin_trait: Forge's Kin
+      - barrel: Arrowhead Brake
+      - magazine: Ricochet Rounds
+      - masterwork: Stability
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Hullabaloo:
+  - label: Envious Arsenal or Voltshot + One for All or Chain Reaction
+    perks:
+      - perk_1: [Envious Arsenal, Voltshot]
+      - perk_2: [One for All, Chain Reaction]
+      - launcher_barrel: Quick Launch
+      - magazine: High-Velocity Rounds
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Succession:
+  - label: Discord + Redirection
+    perks:
+      - perk_1: Discord
+      - perk_2: Redirection
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: No Distractions + Vorpal Weapon
+    perks:
+      - perk_1: No Distractions
+      - perk_2: Vorpal Weapon
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Reconstruction + Vorpal Weapon, Focused Fury, or Firing Line
+    perks:
+      - perk_1: Reconstruction
+      - perk_2: [Vorpal Weapon, Focused Fury, Firing Line]
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pve
+    perks:
+      - perk_1: [Reconstruction, Lead from Gold]
+      - perk_2: [Recombination, Firing Line]
+      - barrel: Fluted Barrel
+      - magazine: Extended Mag
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: Moving Target
+      - perk_2: Snapshot Sights
+      - barrel: Fluted Barrel
+      - magazine: Accurized Rounds
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Perfect Paradox:
+  - label: Pugilist, Stopping Power, or Threat Detector + One-Two Punch, Trench Barrel, or All-Star
+    perks:
+      - perk_1: [Pugilist, Stopping Power, Threat Detector]
+      - perk_2: [One-Two Punch, Trench Barrel, All-Star]
+      - barrel: Barrel Shroud
+      - magazine: Tactical Mag
+      - masterwork: Handling
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Gnawing Hunger:
+  - label: Repulsor Brace + Destabilizing Rounds
+    perks:
+      - perk_1: Repulsor Brace
+      - perk_2: Destabilizing Rounds
+      - barrel: Fluted Barrel
+      - magazine: Flared Magwell
+      - masterwork: Reload Speed
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - label: Subsistence + Rampage or DR
+    perks:
+      - perk_1: Subsistence
+      - perk_2: [Rampage, Destabilizing Rounds]
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: Tap the Trigger
+      - perk_2: [Dynamic Sway Reduction, Master of Arms, Rampage]
+      - barrel: Smallbore
+      - magazine: Ricochet Rounds
+      - masterwork: Stability
+    added: 2026-10-02
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+The Recluse:
+  - mode: pve
+    perks:
+      - perk_1: Repulsor Brace
+      - perk_2: [Desperate Measures, Destabilizing Rounds, Frenzy]
+      - barrel: Smallbore
+      - magazine: Flared Magwell
+      - masterwork: [Range, Stability]
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+  - mode: pvp
+    perks:
+      - perk_1: Dynamic Sway Reduction
+      - perk_2: [Master of Arms, Tap the Trigger]
+      - barrel: Hammer-Forged Rifling
+      - magazine: Ricochet Rounds
+      - masterwork: Range
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Tusk of the Boar:
+  - label: Grave Robber + Bait and Switch
+    perks:
+      - perk_1: Grave Robber
+      - perk_2: Bait and Switch
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Veillantif-D:
+  - label: Heal Clip or Air Trigger + Incandescent
+    perks:
+      - perk_1: [Heal Clip, Air Trigger]
+      - perk_2: Incandescent
+      - origin_trait: Featherweight
+      - launcher_barrel: Quick Launch
+      - magazine: Flared Magwell
+      - masterwork: [Velocity, Handling]
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+Crux Celeritas IV:
+  - label: Reconstruction + Bipod or Explosive Light
+    perks:
+      - perk_1: Reconstruction
+      - perk_2: [Bipod, Explosive Light]
+      - origin_trait: Wild Card
+      - launcher_barrel: Quick Launch
+      - magazine: Impact Casing
+      - masterwork: Velocity
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864
+
+21% Delirium:
+  - label: Reconstruction + Killing Tally
+    perks:
+      - perk_1: Reconstruction
+      - perk_2: Killing Tally
+      - magazine: Extended Mag
+    added: 2026-10-03
+    game_version: 244213.26.06.29.2000-1-bnet.65864

@@ -1,0 +1,27 @@
+# Secrets (see .env.example)
+.env
+.env.*
+!.env.example
+
+# Bungie OAuth token cache (and its temporary file while being rewritten)
+.bungie_token_cache*
+
+# Personal run data: tool-lock state, inventory snapshots, plans, raw profiles
+data/
+
+# Downloaded manifest and wishlist caches
+.cache/
+
+# Private working notes: reviews, plans, logs (see AGENTS.md)
+notes/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# macOS
+.DS_Store

@@ -1,0 +1,28 @@
+# Runs the project's own ruff (pinned in uv.lock), so the hook and
+# `uv run ruff` can never disagree about the rules.
+# Install both hook types with `uv run pre-commit install`.
+default_install_hook_types: [pre-commit, commit-msg]
+default_stages: [pre-commit]
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff check
+        # No --fix: report lint errors and block the commit without changing files
+        entry: uv run ruff check
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff format --check
+        # --check: report formatting issues and block the commit without changing files
+        entry: uv run ruff format --check
+        language: system
+        types: [python]
+      - id: privacy-check
+        name: personal data check
+        # Blocks account IDs, Bungie Names, local paths, private IPs, and emails
+        # in staged files and in the commit message (see AGENTS.md)
+        entry: uv run python scripts/privacy_check.py
+        language: system
+        types: [text]
+        stages: [pre-commit, commit-msg]
