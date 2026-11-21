@@ -1,6 +1,6 @@
 [project]
 name = "destiny-post-session-sweeper-bot"
-version = "1.0.0"
+version = "1.1.0"
 description = "Decides which Destiny 2 gear to keep or shard after each session and stages the shards for dismantling"
 readme = "README.md"
 license = "CC0-1.0"

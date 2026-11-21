@@ -19,6 +19,15 @@ what each command does with them is in
    wishlist (about 30 MB). If you skip it, the first `plan` does it, and the
    first command after each game patch downloads the new manifest.
 
+## Talk to Claude instead
+
+[`skill/SKILL.md`](skill/SKILL.md) is a Claude Code skill that runs the
+commands below for you, so a session is a conversation: "I'm done playing",
+"go", "done dismantling", "keep pairs 2 and 18", "put my stuff back". It asks
+before anything that changes your account. To use it, copy or link the
+`skill/` folder to `.claude/skills/sweeper/` in this repo, or to
+`~/.claude/skills/sweeper/` to have it everywhere.
+
 ## Commands
 
 | Command | Does |
